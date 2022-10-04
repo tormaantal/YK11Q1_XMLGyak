@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orarend SYSTEM "TA_orarend.dtd">
+
+<orarend>
+    <ora id="GEIAK120-BL" típus="kollokvium">
+        <targy>Integrált vállalati rendszerek</targy>
+        <idopont>
+            <nap>2022.09.09</nap>
+            <tol>12:30</tol>
+            <ig>19:30</ig>
+        </idopont>
+        <helyszin>Inf/15</helyszin>
+        <oktato>Dr. Samad Dadvandipour</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL332-BL" típus="kollokvium">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>2022.09.23</nap>
+            <tol>12:30</tol>
+            <ig>15:50</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL333-BL" típus="kollokvium">
+        <targy>Web-es alkalmazások (Java)</targy>
+        <idopont>
+            <nap>2022.09.23</nap>
+            <tol>16:00</tol>
+            <ig>19:30</ig>
+        </idopont>
+        <helyszin>Inf/103</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL333-BL" típus="kollokvium">
+        <targy>Web-es alkalmazások (Java)</targy>
+        <idopont>
+            <nap>2022.09.24</nap>
+            <tol>08:30</tol>
+            <ig>19:20</ig>
+        </idopont>
+        <helyszin>Inf/103</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAK130-BL" típus="kollokvium">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>2022.09.30</nap>
+            <tol>12:30</tol>
+            <ig>19:30</ig>
+        </idopont>
+        <helyszin>A1/317</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL332-BL" típus="kollokvium">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>2022.10.07</nap>
+            <tol>12:30</tol>
+            <ig>15:50</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAK120-BL" típus="kollokvium">
+        <targy>Integrált vállalati rendszerek</targy>
+        <idopont>
+            <nap>2022.10.07</nap>
+            <tol>16:00</tol>
+            <ig>19:30</ig>
+        </idopont>
+        <helyszin>Inf/15</helyszin>
+        <oktato>Dr. Samad Dadvandipour</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAK130-BL" típus="kollokvium">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>2022.10.08</nap>
+            <tol>08:30</tol>
+            <ig>11:50</ig>
+        </idopont>
+        <helyszin>Inf/15</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL30A-BL" típus="kollokvium">
+        <targy>Windows rendszergazda</targy>
+        <idopont>
+            <nap>2022.10.08</nap>
+            <tol>12:20</tol>
+            <ig>15:40</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Wagner György</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAK120-BL" típus="kollokvium">
+        <targy>Integrált vállalati rendszerek</targy>
+        <idopont>
+            <nap>2022.10.14</nap>
+            <tol>12:30</tol>
+            <ig>15:50</ig>
+        </idopont>
+        <helyszin>Inf/15</helyszin>
+        <oktato>Kulcsárné Dr.Forrai Mónika</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAK130-BL" típus="kollokvium">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>2022.10.14</nap>
+            <tol>16:00</tol>
+            <ig>19:30</ig>
+        </idopont>
+        <helyszin>Inf/15</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL30A-BL" típus="kollokvium">
+        <targy>Windows rendszergazda</targy>
+        <idopont>
+            <nap>2022.10.15</nap>
+            <tol>08:30</tol>
+            <ig>11:50</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Wagner György</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL332-BL" típus="kollokvium">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>2022.10.21</nap>
+            <tol>12:30</tol>
+            <ig>15:50</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL30A-BL" típus="kollokvium">
+        <targy>Windows rendszergazda</targy>
+        <idopont>
+            <nap>2022.10.21</nap>
+            <tol>16:00</tol>
+            <ig>19:30</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Wagner György</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL331-BL" típus="kollokvium">
+        <targy>Web technológiák 1</targy>
+        <idopont>
+            <nap>2022.10.22</nap>
+            <tol>08:30</tol>
+            <ig>15:30</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL331-BL" típus="kollokvium">
+        <targy>Web technológiák 1</targy>
+        <idopont>
+            <nap>2022.11.05</nap>
+            <tol>08:30</tol>
+            <ig>15:30</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>GEIK</szak>
+    </ora>
+    <ora id="GEIAL332-BL" típus="kollokvium">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>2022.11.18</nap>
+            <tol>12:30</tol>
+            <ig>15:50</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>GEIK</szak>
+    </ora>
+</orarend>

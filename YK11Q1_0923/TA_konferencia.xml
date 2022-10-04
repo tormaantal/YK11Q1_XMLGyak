@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia>
+    <cím>XML kezdőknek!</cím>
+    <hallgatók>
+        <hallgató>
+            <név>Gipsz Jakab</név>
+            <lakcím>1234 Valahol, Valamilyen u. 5.</lakcím>
+        </hallgató>
+    </hallgatók>
+    <helyszín>Miskolci Egyetem</helyszín>
+    <előadó>
+        <név>Gábor Áron</név>
+        <adószám>12345678-9-10</adószám>
+        <lakcím>9876 Valamerre, Fő út. 5.</lakcím>
+    </előadó>
+    <dátum>2022.09.23.</dátum>
+</konferencia>
