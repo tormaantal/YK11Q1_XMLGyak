@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE orarend SYSTEM "TA_orarend.dtd">
 
-<orarend>
+<orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="TA_orarend.xsd">
     <ora id="GEIAK120-BL" típus="kollokvium">
         <targy>Integrált vállalati rendszerek</targy>
         <idopont>

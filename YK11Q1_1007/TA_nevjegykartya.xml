@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="TA_nevjegykartya.xsd">
+    <nevjegykartya id="1">
+        <nev></nev>
+        <ceg>
+            <cim>
+                <iranyitoszam></iranyitoszam>
+                <varos></varos>
+                <utca></utca>
+                <hazszam></hazszam>
+            </cim>
+            <nev></nev>
+            <telefonszam korzet="20"></telefonszam>
+            <weblap></weblap>
+        </ceg>
+        <beosztas></beosztas>
+        <telefonszam korzet="20"></telefonszam>
+        <email></email>        
+    </nevjegykartya>
+</nevjegykartyak>
