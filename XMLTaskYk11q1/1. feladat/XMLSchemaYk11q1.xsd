@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <!-- Szerkezet felépítése -->
+    <xs:element name="handball">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="team" type="teamTipus" maxOccurs="unbounded"/>
+                <xs:element name="player" type="playerTipus" maxOccurs="unbounded"/>
+                <xs:element name="coach" type="coachTipus" maxOccurs="unbounded"/>
+                <xs:element name="match" type="matchTipus" maxOccurs="unbounded"/>
+                <xs:element name="referee" type="refereeTipus" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+        
+        <!-- PK kulcsok definiálása -->
+        <xs:key name="player_kulcs">
+            <xs:selector xpath="player"/>
+            <xs:field xpath="@idP"/>
+        </xs:key>
+        <xs:key name="coach_kulcs">
+            <xs:selector xpath="coach"/>
+            <xs:field xpath="@idC"/>
+        </xs:key>
+        <xs:key name="team_kulcs">
+            <xs:selector xpath="team"/>
+            <xs:field xpath="@idT"/>
+        </xs:key>
+        <xs:key name="referee_kulcs">
+            <xs:selector xpath="referee"/>
+            <xs:field xpath="@idR"/>
+        </xs:key>
+        
+        <!-- FK kulcsok definiálása -->
+        <xs:keyref refer="team_kulcs" name="team_idegen_kulcs">
+            <xs:selector xpath="match"/>
+            <xs:field xpath="@m_t"/>
+        </xs:keyref>
+        <xs:keyref refer="referee_kulcs" name="referee_idegen_kulcs">
+            <xs:selector xpath="match"/>
+            <xs:field xpath="@m_r"/>
+        </xs:keyref>
+        <xs:keyref refer="team_kulcs" name="team_coach_idegen_kulcs">
+            <xs:selector xpath="coach"/>
+            <xs:field xpath="@c_t"/>
+        </xs:keyref>
+        <xs:keyref refer="team_kulcs" name="team_player_idegen_kulcs">
+            <xs:selector xpath="player"/>
+            <xs:field xpath="@p_t"/>
+        </xs:keyref>
+        
+        <!-- 1:1 kapcsolat létrehozása -->
+        <xs:unique name="unique_coach">
+            <xs:selector xpath="coach"></xs:selector>
+            <xs:field xpath="@c_t"></xs:field>
+        </xs:unique>
+        
+    </xs:element>
+    <!-- Egyszerű típusok definiálása -->
+    <xs:simpleType name="rankTipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="12"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="postTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Kapus"/>
+            <xs:enumeration value="Szélső"/>
+            <xs:enumeration value="Beálló"/>
+            <xs:enumeration value="Irányító"/>
+            <xs:enumeration value="Átlövő"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Komplex típusok definiálása -->
+    <xs:complexType name="birthdateTipus">
+        <xs:sequence>
+            <xs:element name="year">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:totalDigits value="4"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="month">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:totalDigits value="2"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="day">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:totalDigits value="2"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="teamTipus">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="point" type="xs:integer"/>
+            <xs:element name="rank" type="rankTipus"/>
+        </xs:sequence>
+        <xs:attribute name="idT" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="playerTipus">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="post" type="postTipus"/>
+        </xs:sequence>
+        <xs:attribute name="idP" type="xs:string" use="required"/>
+        <xs:attribute name="p_t" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="coachTipus">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="birthdate" type="birthdateTipus"/>
+        </xs:sequence>
+        <xs:attribute name="idC" type="xs:string" use="required"/>
+        <xs:attribute name="c_t" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="matchTipus">
+        <xs:sequence>
+            <xs:element name="location" type="xs:string"/>
+            <xs:element name="date" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute name="m_t" type="xs:string" use="required"/>
+        <xs:attribute name="m_r" type="xs:string" use="required"/>
+    </xs:complexType>  
+    
+    <xs:complexType name="refereeTipus">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="age" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="idR" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+</xs:schema>

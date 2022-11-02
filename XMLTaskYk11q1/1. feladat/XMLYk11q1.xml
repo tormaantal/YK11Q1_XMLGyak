@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<handball xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XMLSchemaYk11q1.xsd">
+    <!-- Három különböző team példány egyedi ID-val és adatokkal-->
+    <team idT="t1">
+        <name>DVTK</name>
+        <point>12</point>
+        <rank>1</rank>
+    </team>
+    <team idT="t2">
+        <name>PLER</name>
+        <point>10</point>
+        <rank>2</rank>
+    </team>
+    <team idT="t3">
+        <name>DEAC</name>
+        <point>8</point>
+        <rank>3</rank>
+    </team>
+    <!-- Három player példány egyedi ID-val, adatokkal és idegenkulccsal -->
+    <player idP="p1" p_t="t1">
+        <name>Torma Antal</name>
+        <post>Kapus</post>
+    </player>
+    <player idP="p2" p_t="t3">
+        <name>Kiss András</name>
+        <post>Beálló</post>
+    </player>
+    <player idP="p3" p_t="t2">
+        <name>Nagy Róbert</name>
+        <post>Irányító</post>
+    </player>
+    <!-- Három coach példány egyedi ID-val, adatokkal és idegenkulccsal  -->
+    <coach idC="c1" c_t="t3">
+        <name>Gipsz Jakab</name>
+        <birthdate>
+            <year>1980</year>
+            <month>05</month>
+            <day>26</day>
+        </birthdate>
+    </coach>
+    <coach idC="c2" c_t="t1">
+        <name>Molnár András</name>
+        <birthdate>
+            <year>1970</year>
+            <month>07</month>
+            <day>11</day>
+        </birthdate>
+    </coach>
+    <coach idC="c3" c_t="t2">
+        <name>Tamás Tamás</name>
+        <birthdate>
+            <year>1992</year>
+            <month>12</month>
+            <day>01</day>
+        </birthdate>
+    </coach>
+    <!-- Három match példány melyek kettő idegenkulcsot tartalmazznak -->
+    <match m_t="t2" m_r="r1">
+        <location>Budapest</location>
+        <date>2022-10-31</date>
+    </match>
+    <match m_t="t1" m_r="r3">
+        <location>Miskolc</location>
+        <date>2022-11-19</date>
+    </match>
+    <match m_t="t3" m_r="r2">
+        <location>Debrecen</location>
+        <date>2023-02-02</date>
+    </match>
+    <!-- Három referee példány ID-val és adatokkal -->
+    <referee idR="r1">
+        <name>Katona János</name>
+        <age>42</age>
+    </referee>
+    <referee idR="r2">
+        <name>Tóth István</name>
+        <age>45</age>
+    </referee>
+    <referee idR="r3">
+        <name>Nagy Péter</name>
+        <age>22</age>
+    </referee>
+</handball>
