@@ -6,6 +6,7 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="team" type="teamTipus" maxOccurs="unbounded"/>
+                <xs:element name="supporter" type="supporterTipus" maxOccurs="unbounded"/>
                 <xs:element name="player" type="playerTipus" maxOccurs="unbounded"/>
                 <xs:element name="coach" type="coachTipus" maxOccurs="unbounded"/>
                 <xs:element name="match" type="matchTipus" maxOccurs="unbounded"/>
@@ -25,6 +26,10 @@
         <xs:key name="team_kulcs">
             <xs:selector xpath="team"/>
             <xs:field xpath="@idT"/>
+        </xs:key>
+        <xs:key name="supporter_kulcs">
+            <xs:selector xpath="supporter"/>
+            <xs:field xpath="@idS"/>
         </xs:key>
         <xs:key name="referee_kulcs">
             <xs:selector xpath="referee"/>
@@ -48,6 +53,10 @@
             <xs:selector xpath="player"/>
             <xs:field xpath="@p_t"/>
         </xs:keyref>
+        <xs:keyref refer="team_kulcs" name="team_supporter_idegen_kulcs">
+            <xs:selector xpath="supporter"/>
+            <xs:field xpath="@s_t"/>
+        </xs:keyref>
         
         <!-- 1:1 kapcsolat létrehozása -->
         <xs:unique name="unique_coach">
@@ -58,9 +67,11 @@
     </xs:element>
     <!-- Egyszerű típusok definiálása -->
     <xs:simpleType name="rankTipus">
-        <xs:restriction base="xs:integer">
-            <xs:minInclusive value="1"/>
-            <xs:maxInclusive value="12"/>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NBI"/>
+            <xs:enumeration value="NBI/B"/>
+            <xs:enumeration value="NBII"/>
+            <xs:enumeration value="Megye"/>
         </xs:restriction>
     </xs:simpleType>
     
@@ -74,8 +85,28 @@
         </xs:restriction>
     </xs:simpleType>
     
+    <xs:simpleType name="licenceTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A"/>
+            <xs:enumeration value="B"/>
+            <xs:enumeration value="C"/>
+            <xs:enumeration value="D"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="amountTipus">
+        <xs:restriction base="xs:integer">
+            <xs:enumeration value="1000000"/>
+            <xs:enumeration value="5000000"/>
+            <xs:enumeration value="10000000"/>
+            <xs:enumeration value="50000000"/>
+            <xs:enumeration value="100000000"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
     <!-- Komplex típusok definiálása -->
-    <xs:complexType name="birthdateTipus">
+    <xs:complexType name="dateTipus">
         <xs:sequence>
             <xs:element name="year">
                 <xs:simpleType>
@@ -104,15 +135,26 @@
     <xs:complexType name="teamTipus">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
-            <xs:element name="point" type="xs:integer"/>
+            <xs:element name="foundation" type="dateTipus"/>
             <xs:element name="rank" type="rankTipus"/>
         </xs:sequence>
         <xs:attribute name="idT" type="xs:string" use="required"/>
     </xs:complexType>
     
+    <xs:complexType name="supporterTipus">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="amount" type="amountTipus"/>
+            <xs:element name="validity" type="dateTipus"/>
+        </xs:sequence>
+        <xs:attribute name="idS" type="xs:string" use="required"/>
+        <xs:attribute name="s_t" type="xs:string" use="required"/>
+    </xs:complexType>
+    
     <xs:complexType name="playerTipus">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
+            <xs:element name="birthdate" type="dateTipus"/>
             <xs:element name="post" type="postTipus"/>
         </xs:sequence>
         <xs:attribute name="idP" type="xs:string" use="required"/>
@@ -122,7 +164,8 @@
     <xs:complexType name="coachTipus">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
-            <xs:element name="birthdate" type="birthdateTipus"/>
+            <xs:element name="birthdate" type="dateTipus"/>
+            <xs:element name="licence" type="licenceTipus"/>
         </xs:sequence>
         <xs:attribute name="idC" type="xs:string" use="required"/>
         <xs:attribute name="c_t" type="xs:string" use="required"/>
@@ -140,7 +183,8 @@
     <xs:complexType name="refereeTipus">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
-            <xs:element name="age" type="xs:integer"/>
+            <xs:element name="birthdate" type="dateTipus"/>
+            <xs:element name="licence" type="licenceTipus"/>
         </xs:sequence>
         <xs:attribute name="idR" type="xs:string" use="required"/>
     </xs:complexType>

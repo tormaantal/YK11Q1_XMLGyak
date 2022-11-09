@@ -4,30 +4,84 @@
     <!-- Három különböző team példány egyedi ID-val és adatokkal-->
     <team idT="t1">
         <name>DVTK</name>
-        <point>12</point>
-        <rank>1</rank>
+        <foundation>
+            <year>1910</year>
+            <month>01</month>
+            <day>01</day>
+        </foundation>
+        <rank>NBII</rank>
     </team>
     <team idT="t2">
         <name>PLER</name>
-        <point>10</point>
-        <rank>2</rank>
+        <foundation>
+            <year>1986</year>
+            <month>06</month>
+            <day>15</day>
+        </foundation>
+        <rank>NBI/B</rank>
     </team>
     <team idT="t3">
-        <name>DEAC</name>
-        <point>8</point>
-        <rank>3</rank>
+        <name>Veszprém</name>
+        <foundation>
+            <year>1977</year>
+            <month>03</month>
+            <day>19</day>
+        </foundation>
+        <rank>NBI</rank>
     </team>
+    <supporter idS="s1" s_t="t1">
+        <name>Apollo Tyres</name>
+        <amount>100000000</amount>
+        <validity>
+            <year>2025</year>
+            <month>06</month>
+            <day>31</day>
+        </validity>
+    </supporter>
+    <supporter idS="s2" s_t="t3">
+        <name>Telekom</name>
+        <amount>100000000</amount>
+        <validity>
+            <year>2030</year>
+            <month>12</month>
+            <day>31</day>
+        </validity>
+    </supporter>
+    <supporter idS="s3" s_t="t1">
+        <name>Borsodi</name>
+        <amount>10000000</amount>
+        <validity>
+            <year>2030</year>
+            <month>01</month>
+            <day>01</day>
+        </validity>
+    </supporter>
     <!-- Három player példány egyedi ID-val, adatokkal és idegenkulccsal -->
     <player idP="p1" p_t="t1">
         <name>Torma Antal</name>
+        <birthdate>
+            <year>1994</year>
+            <month>09</month>
+            <day>02</day>
+        </birthdate>
         <post>Kapus</post>
     </player>
     <player idP="p2" p_t="t3">
         <name>Kiss András</name>
+        <birthdate>
+            <year>1970</year>
+            <month>03</month>
+            <day>11</day>
+        </birthdate>
         <post>Beálló</post>
     </player>
     <player idP="p3" p_t="t2">
         <name>Nagy Róbert</name>
+        <birthdate>
+            <year>1999</year>
+            <month>04</month>
+            <day>30 </day>
+        </birthdate>
         <post>Irányító</post>
     </player>
     <!-- Három coach példány egyedi ID-val, adatokkal és idegenkulccsal  -->
@@ -38,6 +92,7 @@
             <month>05</month>
             <day>26</day>
         </birthdate>
+        <licence>C</licence>
     </coach>
     <coach idC="c2" c_t="t1">
         <name>Molnár András</name>
@@ -46,6 +101,7 @@
             <month>07</month>
             <day>11</day>
         </birthdate>
+        <licence>A</licence>
     </coach>
     <coach idC="c3" c_t="t2">
         <name>Tamás Tamás</name>
@@ -54,6 +110,7 @@
             <month>12</month>
             <day>01</day>
         </birthdate>
+        <licence>B</licence>
     </coach>
     <!-- Három match példány melyek kettő idegenkulcsot tartalmazznak -->
     <match m_t="t2" m_r="r1">
@@ -71,14 +128,29 @@
     <!-- Három referee példány ID-val és adatokkal -->
     <referee idR="r1">
         <name>Katona János</name>
-        <age>42</age>
+        <birthdate>
+            <year>1975</year>
+            <month>01</month>
+            <day>05</day>
+        </birthdate>
+        <licence>C</licence>
     </referee>
     <referee idR="r2">
         <name>Tóth István</name>
-        <age>45</age>
+        <birthdate>
+            <year>1972</year>
+            <month>09</month>
+            <day>22</day>
+        </birthdate>
+        <licence>A</licence>
     </referee>
     <referee idR="r3">
         <name>Nagy Péter</name>
-        <age>22</age>
+        <birthdate>
+            <year>1993</year>
+            <month>11</month>
+            <day>11</day>
+        </birthdate>
+        <licence>A</licence>
     </referee>
 </handball>
