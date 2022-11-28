@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<handball xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XMLSchemaYk11q1.xsd">
+    <!-- Öt különböző team példány egyedi ID-val és adatokkal-->
+    <team idT="t1">
+        <name>DVTK</name>
+        <foundation>
+            <year>1910</year>
+            <month>01</month>
+            <day>01</day>
+        </foundation>
+        <rank>NBII</rank>
+    </team>
+    <team idT="t2">
+        <name>PLER</name>
+        <foundation>
+            <year>1986</year>
+            <month>06</month>
+            <day>15</day>
+        </foundation>
+        <rank>NBI/B</rank>
+    </team>
+    <team idT="t3">
+        <name>HTE</name>
+        <foundation>
+            <year>1919</year>
+            <month>06</month>
+            <day>01</day>
+        </foundation>
+        <rank>NBII</rank>
+    </team>
+    <team idT="t4">
+        <name>Veszprém</name>
+        <foundation>
+            <year>1977</year>
+            <month>03</month>
+            <day>19</day>
+        </foundation>
+        <rank>NBI</rank>
+    </team>
+    <team idT="t5">
+        <name>DEAC</name>
+        <foundation>
+            <year>1919</year>
+            <month>10</month>
+            <day>05</day>
+        </foundation>
+        <rank>NBI/B</rank>
+    </team>
+    <!-- Öt különböző supporter példány egyedi ID-val, adatokkal és idegenkulccsal-->
+    <supporter idS="s1" s_t="t1">
+        <name>Apollo Tyres</name>
+        <amount>100000000</amount>
+        <validity>
+            <year>2025</year>
+            <month>06</month>
+            <day>31</day>
+        </validity>
+    </supporter>
+    <supporter idS="s2" s_t="t4">
+        <name>Telekom</name>
+        <amount>100000000</amount>
+        <validity>
+            <year>2030</year>
+            <month>12</month>
+            <day>31</day>
+        </validity>
+    </supporter>
+    <supporter idS="s3" s_t="t3">
+        <name>Adidas</name>
+        <amount>100000000</amount>
+        <validity>
+            <year>2024</year>
+            <month>01</month>
+            <day>01</day>
+        </validity>
+    </supporter>
+    <supporter idS="s4" s_t="t5">
+        <name>Hall</name>
+        <amount>5000000</amount>
+        <validity>
+            <year>2029</year>
+            <month>12</month>
+            <day>01</day>
+        </validity>
+    </supporter>
+    <supporter idS="s5" s_t="t2">
+        <name>Erima</name>
+        <amount>1000000</amount>
+        <validity>
+            <year>2030</year>
+            <month>10</month>
+            <day>15</day>
+        </validity>
+    </supporter>
+    <!-- Öt player példány egyedi ID-val, adatokkal és idegenkulccsal -->
+    <player idP="p1" p_t="t1">
+        <name>Torma Antal</name>
+        <birthdate>
+            <year>1994</year>
+            <month>09</month>
+            <day>02</day>
+        </birthdate>
+        <post>Kapus</post>
+    </player>
+    <player idP="p2" p_t="t3">
+        <name>Kiss András</name>
+        <birthdate>
+            <year>1970</year>
+            <month>03</month>
+            <day>11</day>
+        </birthdate>
+        <post>Beálló</post>
+    </player>
+    <player idP="p3" p_t="t2">
+        <name>Nagy Róbert</name>
+        <birthdate>
+            <year>1999</year>
+            <month>04</month>
+            <day>30 </day>
+        </birthdate>
+        <post>Irányító</post>
+    </player>
+    <player idP="p4" p_t="t5">
+        <name>Győrfi Ádám</name>
+        <birthdate>
+            <year>2000</year>
+            <month>02</month>
+            <day>23</day>
+        </birthdate>
+        <post>Szélső</post>
+    </player>
+    <player idP="p5" p_t="t4">
+        <name>Dávid Máté</name>
+        <birthdate>
+            <year>1992</year>
+            <month>07</month>
+            <day>30</day>
+        </birthdate>
+        <post>Átlövő</post>
+    </player>
+    <!-- Öt coach példány egyedi ID-val, adatokkal és idegenkulccsal  -->
+    <coach idC="c1" c_t="t5">
+        <name>Gipsz Jakab</name>
+        <birthdate>
+            <year>1980</year>
+            <month>05</month>
+            <day>26</day>
+        </birthdate>
+        <licence>C</licence>
+    </coach>
+    <coach idC="c2" c_t="t1">
+        <name>Molnár András</name>
+        <birthdate>
+            <year>1970</year>
+            <month>07</month>
+            <day>11</day>
+        </birthdate>
+        <licence>A</licence>
+    </coach>
+    <coach idC="c3" c_t="t2">
+        <name>Tamás Tamás</name>
+        <birthdate>
+            <year>1992</year>
+            <month>12</month>
+            <day>01</day>
+        </birthdate>
+        <licence>B</licence>
+    </coach>
+    <coach idC="c4" c_t="t3">
+        <name>Bakos Károly</name>
+        <birthdate>
+            <year>1989</year>
+            <month>08</month>
+            <day>21</day>
+        </birthdate>
+        <licence>B</licence>
+    </coach>
+    <coach idC="c5" c_t="t4">
+        <name>Momir Ilic</name>
+        <birthdate>
+            <year>1986</year>
+            <month>01</month>
+            <day>30</day>
+        </birthdate>
+        <licence>B</licence>
+    </coach>
+    <!-- Öt match példány melyek kettő idegenkulcsot tartalmazznak -->
+    <match m_t="t2" m_r="r1">
+        <location>Budapest</location>
+        <date>2022-10-31</date>
+    </match>
+    <match m_t="t1" m_r="r3">
+        <location>Miskolc</location>
+        <date>2022-11-19</date>
+    </match>
+    <match m_t="t3" m_r="r2">
+        <location>Hajdúböszörmény</location>
+        <date>2022-12-02</date>
+    </match>
+    <match m_t="t5" m_r="r4">
+        <location>Veszprém</location>
+        <date>2023-03-11</date>
+    </match>
+    <match m_t="t4" m_r="r5">
+        <location>Debrecen</location>
+        <date>2023-05-20</date>
+    </match>
+    <!-- Öt referee példány ID-val és adatokkal -->
+    <referee idR="r1">
+        <name>Katona János</name>
+        <birthdate>
+            <year>1975</year>
+            <month>01</month>
+            <day>05</day>
+        </birthdate>
+        <licence>C</licence>
+    </referee>
+    <referee idR="r2">
+        <name>Tóth István</name>
+        <birthdate>
+            <year>1972</year>
+            <month>09</month>
+            <day>22</day>
+        </birthdate>
+        <licence>A</licence>
+    </referee>
+    <referee idR="r3">
+        <name>Nagy Péter</name>
+        <birthdate>
+            <year>1993</year>
+            <month>11</month>
+            <day>11</day>
+        </birthdate>
+        <licence>A</licence>
+    </referee>
+    <referee idR="r4">
+        <name>Bíró Ádám</name>
+        <birthdate>
+            <year>1990</year>
+            <month>04</month>
+            <day>16</day>
+        </birthdate>
+        <licence>C</licence>
+    </referee>
+    <referee idR="r5">
+        <name>Kiss Olivér</name>
+        <birthdate>
+            <year>1988</year>
+            <month>11</month>
+            <day>27</day>
+        </birthdate>
+        <licence>C</licence>
+    </referee>
+</handball>

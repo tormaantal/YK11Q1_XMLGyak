@@ -1,0 +1,175 @@
+Team ID: t1
+Name: DVTK
+Foundation: 1910-01-01
+Rank: NBII
+
+Team ID: t2
+Name: PLER
+Foundation: 1986-06-15
+Rank: NBI/B
+
+Team ID: t3
+Name: HTE
+Foundation: 1919-06-01
+Rank: NBII
+
+Team ID: t4
+Name: Veszprém
+Foundation: 1977-03-19
+Rank: NBI
+
+Team ID: t5
+Name: DEAC
+Foundation: 1919-10-05
+Rank: NBI/B
+
+
+------------------
+Supporter ID: s1
+S_T FK: t1
+Name: Apollo Tyres
+Amount: 100000000
+Validity: 2025-06-31
+
+Supporter ID: s2
+S_T FK: t4
+Name: Telekom
+Amount: 100000000
+Validity: 2030-12-31
+
+Supporter ID: s3
+S_T FK: t3
+Name: Adidas
+Amount: 100000000
+Validity: 2024-01-01
+
+Supporter ID: s4
+S_T FK: t5
+Name: Hall
+Amount: 5000000
+Validity: 2029-12-01
+
+Supporter ID: s5
+S_T FK: t2
+Name: Erima
+Amount: 1000000
+Validity: 2030-10-15
+
+
+------------------
+Player ID: p1
+P_T FK: t1
+Name: Torma Antal
+Birthdate: 1994-09-02
+Post: Kapus
+
+Player ID: p2
+P_T FK: t3
+Name: Kiss András
+Birthdate: 1970-03-11
+Post: Beálló
+
+Player ID: p3
+P_T FK: t2
+Name: Nagy Róbert
+Birthdate: 1999-04-30 
+Post: Irányító
+
+Player ID: p4
+P_T FK: t5
+Name: Győrfi Ádám
+Birthdate: 2000-02-23
+Post: Szélső
+
+Player ID: p5
+P_T FK: t4
+Name: Dávid Máté
+Birthdate: 1992-07-30
+Post: Átlövő
+
+
+------------------
+Coach ID: c1
+C_T FK: t5
+Name: Gipsz Jakab
+Birthdate: 1980-05-26
+Licence: C
+
+Coach ID: c2
+C_T FK: t1
+Name: Molnár András
+Birthdate: 1970-07-11
+Licence: A
+
+Coach ID: c3
+C_T FK: t2
+Name: Tamás Tamás
+Birthdate: 1992-12-01
+Licence: B
+
+Coach ID: c4
+C_T FK: t3
+Name: Bakos Károly
+Birthdate: 1989-08-21
+Licence: B
+
+Coach ID: c5
+C_T FK: t4
+Name: Momir Ilic
+Birthdate: 1986-01-30
+Licence: B
+
+
+------------------
+M_T FK: t2
+M_R FK: r1
+Location: Budapest
+Date: 2022-10-31
+
+M_T FK: t1
+M_R FK: r3
+Location: Miskolc
+Date: 2022-11-19
+
+M_T FK: t3
+M_R FK: r2
+Location: Hajdúböszörmény
+Date: 2022-12-02
+
+M_T FK: t5
+M_R FK: r4
+Location: Veszprém
+Date: 2023-03-11
+
+M_T FK: t4
+M_R FK: r5
+Location: Debrecen
+Date: 2023-05-20
+
+
+------------------
+Referee ID: r1
+Name: Katona János
+Birthdate: 1975-01-05
+Licence: C
+
+Referee ID: r2
+Name: Tóth István
+Birthdate: 1972-09-22
+Licence: A
+
+Referee ID: r3
+Name: Nagy Péter
+Birthdate: 1993-11-11
+Licence: A
+
+Referee ID: r4
+Name: Bíró Ádám
+Birthdate: 1990-04-16
+Licence: C
+
+Referee ID: r5
+Name: Kiss Olivér
+Birthdate: 1988-11-27
+Licence: C
+

@@ -65,6 +65,7 @@
         </xs:unique>
         
     </xs:element>
+    
     <!-- Egyszerű típusok definiálása -->
     <xs:simpleType name="rankTipus">
         <xs:restriction base="xs:string">
